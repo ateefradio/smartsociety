@@ -1,0 +1,800 @@
+.body {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #f2f5f7;
+}
+
+.html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+
+/**********Nav Bar***************/
+.topnav {
+ position: fixed;
+overflow: hidden;
+background-color: white;
+box-shadow: 0 3px 20px green;
+width: 100%;
+border-bottom: solid 2px #fff;
+z-index: 5;
+top: 0;
+left: 0%;
+}
+
+.topnav a {
+float: right;
+display: block;
+color:  greenyellow;
+text-align: center;
+padding: 20px 40px;
+text-decoration: none;
+font-size: 22px;
+justify-content: space-evenly;
+margin-top: 25px;
+}
+.topnav img{
+ 
+height: 8rem;
+width: 15rem;
+left: 0%;
+margin: 5px;
+cursor: pointer;
+}
+
+.topnav a:hover {
+color: green;
+
+}
+.topnav a::after{
+content: '';
+display: block;
+height: 3px;
+background-color: greenyellow;
+position: relative;
+width: 0%;
+transition: all ease-in-out 200ms;
+
+}
+.topnav a:hover::after{
+width: 100%;
+}
+
+/*.topnav a.active {
+background-color: #4CAF50;
+color: white;
+}*/
+
+.topnav .icon {
+display: none;
+}
+
+@media screen and (max-width: 1040px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+  
+}
+}
+
+@media screen and (max-width: 1040px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+#reshome{
+  margin-top: 7%;
+}
+.topnav.responsive a:hover {
+  float: none;
+  display: block;
+  text-decoration: none;
+}
+.topnav.responsive a::after{
+  content: '';
+  display: none;    
+}
+}
+
+@media screen and (max-width: 856px) {
+#reshome{
+  margin-top: 10%;
+}
+}
+@media screen and (max-width: 600px) {
+#reshome{
+  margin-top: 13%;
+}
+}
+@media screen and (max-width: 461px) {
+#reshome{
+  margin-top: 15%;
+}
+}
+@media screen and (max-width: 400px) {
+#reshome{
+  margin-top: 20%;
+}
+}
+@media screen and (max-width: 300px) {
+#reshome{
+  margin-top: 22%;
+}
+}
+/******************/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+ 
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+  overflow-x: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .right {
+    margin-left: -20px;
+  }
+}
+
+
+.notice-box {
+
+  background: white;
+  border: 1px solid #E1E1E1;
+  box-shadow: 0 0 6px green;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 70px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.glow {
+  font-size: 20px;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px green, 0 0 40px greenyellow;
+  }
+
+}
+
+
+.top-container{
+  height: 360px; background-color: lightgoldenrodyellow; 
+}
+@media screen and (max-width: 800px){
+.top-container{
+  height:1000px;
+  align-items: center;
+}
+.notice-box{
+  float: none;
+  margin-top: 50px;
+ left:0px;
+}
+
+.form-container{
+  float:none;
+  margin-left: -50px;
+}
+.slideshow-container{
+ margin-top: 500px;
+ 
+}
+.slideshow img{
+  width:400px;
+  margin-left: 0px;
+}
+.gallery img{
+ margin-left:0px;
+}
+
+.pic{
+
+  overflow: hidden;
+}
+
+}
+
+
+.slideshow-container {
+  background: green;
+  width:500px;
+  margin: 0 auto;
+  padding: 10px 10px 0 10px;
+  margin-top: 60px;
+  
+}
+
+.slideshow_wrapper {
+  width:500px;
+  height:280px;
+  overflow: hidden;
+   
+}
+
+.slideshow {
+  width:1500px;
+  height:280px;
+  margin: 0 0 0 -1000px;
+ position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration:10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate-reverse;
+   -webkit-animation-play-state: running;
+}
+
+.slideshow-container{
+  margin-top: 20px;
+  overflow: hidden;
+ }
+
+.slide {
+  
+  width:500px;
+  height: 270px;
+  float:left;
+  
+}
+
+.slideshow img{
+  width:500px; height:270px;
+}
+
+@-webkit-keyframes slide_animation {
+  
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:0px;}
+  30% {left:500px;}
+  40% {left:500px;}
+  50% {left:500px;}
+  60% {left:500px;}
+  70% {left:1000px;}
+  80% {left:1000px;}
+  90% {left:1000px;}
+  100% {left:1000px;}
+  
+  
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 20px;
+  background-color: lightgoldenrodyellow;
+  float: right;
+  border: 3px solid green;
+  margin: 5px;
+  box-shadow: 0px 0px 3px green;
+  text-align: center;
+  Height:337px;
+}
+
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+  width: 60%;
+  padding: 7px;
+  margin: 5px 0 22px 0;
+  border: 2px solid;
+  background: #f1f1f1;
+  border: 3px solid green;
+  border-radius: 50px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+  background-color: whitesmoke;
+  border-radius: 50px;
+  border: 3px solid yellowgreen;
+  cursor: pointer;
+  outline-style: none !important;
+
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: 3px solid lightgoldenrodyellow;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+font-family: monospace;
+}
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  color: #4CAF50;
+  background-color: #e0e0e0;
+font-size: 20px;
+font-family: monospace;
+}
+
+.logo {
+  height: 150px;
+  width: 250px;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+
+.welcome {
+
+  text-align: center;
+  border-bottom: 0.2vw solid green;
+
+}
+
+.welcome h1 {
+  font-size: 3vw;
+  font-family: 'Bevan';
+  color: green;
+
+
+
+}
+
+
+
+.row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 33.333%; /* IE10 */
+  flex: 33.333%;
+  max-width: 33.333%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.text {
+  margin-top: 30px;
+  font-size: 1.3vw;
+
+  border: 3px solid black;
+}
+
+.text1 {
+  font-size: 1.3vw;
+  margin-top: 10px;
+  border: 3px solid black;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+
+
+.footer-distributed {
+  background:lightyellow;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: green;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: green;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: green;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: white;
+  color: green;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+  border: 1px solid green;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: green;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: green;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: green;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+    width: 120%;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+  .footer-distributed .footer-center {
+  margin-bottom: 200px;
+  
+  }
+
+
+}
+
+
+
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin-top: 40px;
+  margin-left: 150px;
+  border: 10px double green;
+  margin-bottom: 10px;
+
+}
+.container1 {
+  position: relative;
+  max-width: 800px;
+  margin-top: 40px;
+  margin-left: 450px;
+  border: 10px double green;
+  margin-bottom: 10px;
+
+}
+
+.container img {
+  vertical-align: middle;
+  height: 450px;
+  width: 200px;
+}
+
+
+
+.container .content , .container1 .content1 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 90%;
+  padding: 20px;
+}
+
+@media screen and (max-width:800px) {
+  .container{
+    margin-left:0px;
+    width: 500px;
+  }
+  .container1{
+    margin-left:0px;
+    width: 500px;
+  }
+  .wrapper{
+    left:0px;
+    margin-left:-20px;
+  } 
+  .happy{
+    display: none;
+  }
+
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+.wrapper{
+  margin-left: 80px;
+  max-width: 420px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px green; 
+  border: 4px solid green;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+  font-size: 18px;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 90%;
+  padding: 10px;
+  
+}
+.wrapper .input_field input[type="email"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 90%;
+  padding: 10px;
+  
+}
+
+.wrapper .input_field input[type="text"]:focus,
+.wrapper textarea:focus{
+  width: 90%;
+  padding: 10px;
+  border: 3px solid green;
+  
+}
+.wrapper .input_field input[type="email"]:focus,
+.wrapper textarea:focus{
+  width: 90%;
+  padding: 10px;
+  border: 3px solid green;
+  
+}
+
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+
+.happy{
+  float:right;
+  height: 400px;
+  margin: 50px;
+  width: 500px;
+  -webkit-transform: rotate(-30deg);
+}
+
+.choose{
+ padding: 50px;
+ background-color:lightgoldenrodyellow;
+ color: green;
+ border: 3px solid green;
+ font-size: 20px;
+ font-weight: 500;
+ font-style: italic;}
+ .choose:hover{
+  
+   color: green;
+   background-color: transparent;
+   
+ }
+ @media only screen and (max-width:600px) {
+.choose{
+ margin-left: 30px;
+ margin-bottom: 10px;
+ align-self: center;
+}
+#map{
+  float:right;
+
+  
+}
+
+ }
+
+ @media only screen and (max-width:1000px) {
+  
+  #map{
+    float:right;
+    margin-right: -100px;
+  }
+  
+   }
+
+
+
+
+
+
+
+
+
+ #map{
+margin-left: 870px;
+  border: 5px solid green;
+ height:200px;
+ width:350px;
+margin-top: -200px;
+}

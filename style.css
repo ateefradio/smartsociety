@@ -1,0 +1,227 @@
+body{
+  background-color: lightsalmon;
+}
+img{
+    height: 100px;
+    vertical-align: middle;
+    text-align:center ;
+ }
+ 
+ }
+ .myDiv2 {
+     border: 2px outset black;
+     background-color:Burlywood ;    
+     text-align: center;
+     margin-top: -2px;
+     width: 100%;
+    }
+
+ .myDiv {
+  border: 3px solid green;
+  background-color:#f2edc1;   
+  height: 250px;
+  width: 500px;}
+ 
+.box{
+  border: 2px outset black ;
+  margin-top: 10px;
+  
+}
+ p{
+     display: inline;
+ }
+
+  marquee{
+     font-size: 20px;
+     font-weight: 800;
+     color: #d81121;
+     font-family: sans-serif;
+ }   
+  a.button4{
+     display: inline-block;
+     padding: 7px;
+      margin: 0 0.1em 0.1em 0;
+      border:0.16em solid rgba(255,255,255,0);
+      border-radius:2em;
+      box-sizing: border-box;
+      text-decoration:none;
+      font-family:'Roboto',sans-serif;
+      font-weight:300;
+      color:#FFFFFF;
+      text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+      text-align:center;
+      transition: all 0.2s;
+ }
+ a.button4:hover{
+     border-color: rgba(255,255,255,1);
+  }
+ @media all and (max-width:30em){
+     a.button4{
+         display:block;
+         margin:0.2em auto;
+       }
+  }
+  a.button1{
+    display: inline-block;
+    padding: 7px;
+     margin: 0 0.1em 0.1em 0;
+     border:0.16em solid rgba(255,255,255,0);
+     border-radius:2em;
+     box-sizing: border-box;
+     text-decoration:none;
+     font-family:'Roboto',sans-serif;
+     font-weight:300;
+     color:#FFFFFF;
+     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+     text-align:center;
+     transition: all 0.2s;
+}
+a.button1:hover{
+    border-color: rgba(255,255,255,1);
+ }
+ .mark{
+   color: blue;
+ }
+ 
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+input[type=text],input[type=email],input[type=number],input[type=password],input[type=date]{
+  width: 75%;
+  padding: 12px;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit],#button {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 45%;
+
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+}
+
+input[type=submit],#button:hover {background-color: rgb(240, 58, 58)}
+
+input[type=submit],#button:active {
+  background-color: yellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin-left: 110px;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+  input[type=text],input[type=email],input[type=number],input[type=password],input[type=date]{
+    width: 75%;
+    padding: 12px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
+
+/* code that is here, until the first @media block, will apply to any screen size */
+.img, .row:after, .col-25,.header, .box, .col-75, .container, .footer-center,.footer-company-about,.footer-company-name,.footer-distributed,.footer-icons,.footer-left,.footer-links,.footer-right,.mark,.myDiv,.myDiv2,.nav-link,.nav-link:hover,.navbar {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  .img, .row:after, .col-25,.header, .box, .col-75, .container, .footer-center,.footer-company-about,.footer-company-name,.footer-distributed,.footer-icons,.footer-left,.footer-links,.footer-right,.mark,.myDiv,.myDiv2,.nav-link,.nav-link:hover,.navbar{
+
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .img, .row:after, .col-25,.header, .box, .col-75, .container, .footer-center,.footer-company-about,.footer-company-name,.footer-distributed,.footer-icons,.footer-left,.footer-links,.footer-right,.mark,.myDiv,.myDiv2,.nav-link,.nav-link:hover,.navbar{
+
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  .img, .row:after, .col-25,.header, .box, .col-75, .container, .footer-center,.footer-company-about,.footer-company-name,.footer-distributed,.footer-icons,.footer-left,.footer-links,.footer-right,.mark,.myDiv,.myDiv2,.nav-link,.nav-link:hover,.navbar {
+    width: 480px ;
+  }
+}
+
+/* code that is here will apply to any screen size */

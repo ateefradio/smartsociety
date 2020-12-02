@@ -1,0 +1,219 @@
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    border: 2px outset black;
+    background-color:firebrick; 
+    color:yellow;
+    margin: -20px; 
+    
+  }
+  p{
+    display: inline;
+  }
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px outset black; 
+  }
+
+  img{
+    
+      height: 150px;
+  }
+  
+  marquee{
+    width:100%; 
+    background-color: burlywood; 
+    height: 40px; 
+    font-size: 25px; 
+    border:3px solid black;
+    margin-top: 18px; 
+    
+  }
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+
+  .notice {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+    #button1 {
+      margin-left: 0px;
+    }
+  }
+
+  
+  :host {
+    display: inline-block;
+    overflow: hidden;
+    text-align: initial;
+    white-space: nowrap;
+  }
+  
+  a{
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+  
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+  }
+  
+ 
+  /* Add a card effect for articles */
+  .card {
+    background-color: moccasin;
+    padding: 20px;
+    margin-top: 20px;
+    border: 3px outset black;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn  {
+      width: 100%;
+      padding: 0;
+    }
+    input[type=submit] ,#button {
+      display: none;
+    }
+  /*
+    #marq{
+    width: 540px;
+      margin-right: 2px;
+    }
+    */
+    .butt a{
+      display: none;
+     
+  }
+
+  .box1{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  }
+  .butt a{
+      display: inline;
+     margin-top: 30px;
+     margin-bottom: 30px;
+  }
+  
+  .view a{
+    margin-top: 45px;
+    margin-bottom: 50px;
+  }
+    
+ .box1{
+  margin-left: 70px;
+  margin-right:70px;
+ }
+
+  input[type=submit] ,#button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 7px #999;
+  }
+  
+  input[type=submit],#button:hover {background-color: #3e8e41}
+  
+  input[type=submit],#button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+

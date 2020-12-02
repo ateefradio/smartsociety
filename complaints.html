@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<title>SMART SOCIETY</title>
+
+
+<!--M E T A    T A G S-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- LINKS-->
+<link rel="stylesheet" href="main.css">
+<link rel="icon" href="images/logo.png" type="image/icon type">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="./Themesfinity&#39;s CSS Button_files/buttons.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<script src="nav.js"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1_ZZdNOXtuTYg9R4N77X_r6CzIIO94NM&callback=initMap&libraries=&v=weekly"
+      defer></script>
+      <script src="index.js"></script>
+<script> 
+ var user1="admin";
+var username=prompt('Please enter  Username:',' ');
+if (username==user1){
+   var pass1="admin";
+   password=prompt('If you are suppose to be here you have a password. Please type  it now:',' ');
+    if (password==pass1){
+        alert("WELCOME!!")
+     }
+    else {
+        window.location="index.php";
+    }
+}
+else {
+  window.location="index.php";
+}
+  </script>
+   <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+</head>
+
+
+<body style="overflow-x: hidden;" >
+<!--Nav Bar-->
+<div id="mynav">
+  <div class="topnav" id="myTopnav">
+  <img onclick="window.location.reload()" src="images/logo.png" alt="logo" width="100" height="80" style="cursor: pointer;">
+  <a href="payments.html">PAYMENTS</a>
+  <a href="complaints.html" id="myBtn">COMPLAINTS</a>
+  <a href="memdetails1.php" id="mem">MEMBER DETAILS</a>
+  <a href="facilities.html">FACILITIES</a></li>
+  <a href="index.php">ABOUT</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  </div>
+  <!--Main body-->
+  <div class="right-section">
+    <img src="images/happy" class="happy">
+  </div>
+  
+  <div class="wrapper" style="margin-top: 180px;">
+    <h2>Post Your Complaints/Permission/Feedback Here!</h2>
+    <form action="complaints.php" id="myform" method="POST" value="submit">
+      <div class="input_field">
+        <input type="text" placeholder="Name" id="name" name="name"  required>
+      </div>
+      <div class="input_field">
+        <input type="text" placeholder="Flat Number" id="flatnumber" name="userid" required>
+      </div>
+      <div class="input_field">
+        <input type="email" placeholder="Email" id="email" name="email" required>
+      </div>
+      <div class="input_field">
+        <textarea placeholder="Message" id="message" name="complaint" required></textarea>
+      </div>
+      <button class="btn btn-warning btn-radius" style="margin-left: 150px;">Submit
+      </button>
+    </form>
+  </div>
+
+
+
+ 
+
+
+  <!--FOOTER-->
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>GOKULDHAM<span>Society</span></h3>
+      <p class="footer-links">
+        <a href="index.php" class="link-1">About</a>
+  
+        <a href="facilities.html">Facilities</a>
+  
+        <a href="memdetails1.php">Members</a>
+  
+        <a href="complaints.html">Complaints</a>
+      <a href="payments.html">Payments</a>
+  
+
+      </p>
+
+      <p class="footer-company-name">Gokuldham scoiety © 2020</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <a href="https://www.google.com/maps/place/Gokuldham+Society,+Satya+Nagar,+Sathi+D+Souza+Nagar,+Saki+Naka,+Mumbai,+Maharashtra+400072/@19.0998496,72.8850761,17z/data=!4m5!3m4!1s0x3be7c8702918b84f:0x2677f9d7454c6342!8m2!3d19.0998915!4d72.8873084"> <p>Film City Complex, Aarey Colony,<span>Goregaon, Mumbai, Maharashtra 400065</span></p></a>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p> 022 2345678</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">info.gokuldhamsociety.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+      <div id="map" class="map"></div>
+    </div>
+
+
+  </footer>
+</body>
+
+</html>
